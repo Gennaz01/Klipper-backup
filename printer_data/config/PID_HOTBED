@@ -1,0 +1,8 @@
+#=====================================================
+# PID Hotbed
+#=====================================================
+[gcode_macro PID_HOTBED]
+description: Calibrate PID Hotbed
+gcode:
+    M106 S255
+    PID_CALIBRATE HEATER=heater_bed TARGET=100
