@@ -4,5 +4,5 @@
 [gcode_macro PID_HOTEND]
 description: Calibrate PID Hotend
 gcode:
-    M106 S255
+    
     PID_CALIBRATE HEATER=extruder TARGET=250
