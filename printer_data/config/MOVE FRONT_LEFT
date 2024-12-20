@@ -1,0 +1,5 @@
+[gcode_macro MOVE_Z1]
+description: Muove il motore Z1 di una distanza specifica
+gcode:
+  {% set distance = params.DISTANCE|float %}
+  STEPPER_BUZZ STEPPER=stepper_z1 DISTANCE={distance}
